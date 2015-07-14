@@ -4,7 +4,7 @@
 
 ```sh
 docker run -ti \
-           -p 8080:80 \
+           -p 8000:8000 \
            -v `pwd`:/workspace \
            fgrehm/codebox
 ```
