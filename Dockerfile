@@ -6,4 +6,4 @@ RUN echo '@alpine-3.1 http://dl-3.alpinelinux.org/alpine/v3.1/main' >> /etc/apk/
     && npm cache clean -g
 EXPOSE 8000
 WORKDIR /workspace
-CMD ["codebox", "run", "."]
+CMD ["codebox", "run", "-n", "0.0.0.0", "-p", "8000", "."]
