@@ -4,6 +4,6 @@ RUN echo '@alpine-3.1 http://dl-3.alpinelinux.org/alpine/v3.1/main' >> /etc/apk/
     && apk-install git python make build-base \
     && npm install -g codebox \
     && npm cache clean -g
-EXPOSE 80
+EXPOSE 8000
 WORKDIR /workspace
 CMD ["codebox", "run", "."]
